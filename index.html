@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/images/rain.png">
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <header>
+        <div id="indicator"></div>
+        <div id="location-status">Searching for your current location...</div>
+    </header>
+
+    <main>
+        <section id="cloud">
+            <svg height="100" width="200">
+                <circle cx="100" cy="40" r="25" fill="#ffff" />
+                <circle cx="90" cy="60" r="20" fill="#ffff" />
+                <circle cx="70" cy="50" r="20" fill="#ffff" />
+                <circle cx="115" cy="62" r="15" fill="#ffff" />
+                <circle cx="135" cy="57" r="17" fill="#ffff" />
+                <circle cx="127" cy="33" r="12" fill="#ffff" />
+                <circle id="cloud-click" cx="100" cy="50" r="50"/>
+                    
+                <circle cx="80" cy="90" r="4" fill="#ffff" />    
+                <polygon points="76,89 84,89 80,80" fill="#ffff" />
+                    
+                <circle cx="130" cy="95" r="3" fill="#ffff" />    
+                <polygon points="127,94 133,94 130,81" fill="#ffff"/>
+
+                <circle cx="105" cy="95" r="4" fill="#ffff" />    
+                <polygon points="101,95 109,95 105,85" fill="#ffff" />
+
+                <line id="crossLine" x1="180" y1="20" x2="20" y2="80" style="stroke:red;stroke-width:4" />
+            </svg>
+        </section>
+
+        <aside class="sprite"></aside>
+
+        <!-- Search Bar-->
+        <section class="card">
+            <div class="search-box">
+                <i id="location-btn" class="fas fa-map-marker-alt"></i>
+                <input id="city" type="text" class="search-bar" placeholder="Enter a city">
+                <button id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        
+            <!-- Current Weather -->
+            <section id="current" class="wrapper">
+                <h1 id="location"></h1>
+                <h2 id="date"></h2>
+                <div class="weatherIcon">
+                    <img id="img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Weather Icon">
+                </div>
+                <div class="info">
+                    <p id="temp"></p>
+                    <p id="conditions"></p>
+                </div>
+            </section>
+
+            <section id="hourly-forecast"></section>
+        </section>
+    </main>
+
+    <footer>
+        <audio src="audio/rain.mp3" id="rain-audio"></audio>
+        <audio src="audio/click.wav" id="click-audio"></audio>
+        <div>© 2024 Thang Le Duc</div>
+        <div>Designed with ❤️‍🔥</div>
+        <div>Prague, Czech Republic</div>
+    </footer>    
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
