@@ -40,6 +40,9 @@ Jedná se o webovou aplikaci, která poskytuje uživatelům aktuální informace
 4. Kliknutím na ikonu mraku, budete moci vypnout či zapnout zvuky pršení do pozadí.
 5. Při stisknutí šipky ZPĚT se můžete vrátit k naposledy vyhledávané lokaci
 
+## Odkaz na GitHub Pages
+https://thephenom00.github.io/Weather-App/
+
 ## Popis se snímky
 
 ### Vzhled aplikace
